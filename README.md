@@ -1,5 +1,5 @@
-# Minos_Prime_Sa1nt
-game code snake in browser BETA
+    # Minos_Prime_Sa1nt
+    game code snake in browser BETA
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -1210,14 +1210,14 @@ game code snake in browser BETA
             const nameInput = document.getElementById("nameInput");
             const playerName = nameInput.value.trim() || "Анонимный игрок";
             
-            // Добавляем рекорд в глобальную таблицу
+                            // Добавляем рекорд в глобальную таблицу
             const newRecord = {
                 name: playerName,
                 score: score,
                 date: new Date().toISOString()
             };
             
-            // Обновляем глобальные рекорды
+                        // Обновляем глобальные рекорды
             globalRecords.push(newRecord);
             globalRecords.sort((a, b) => b.score - a.score);
             if (globalRecords.length > 10) globalRecords.length = 10;
